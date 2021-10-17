@@ -42,4 +42,8 @@ class StringCalculatorShould {
    public void  negativeInputReturnsException() throws Exception {
    	stringCalculator.add("-1");
    }
+   // test for more than 1000 number ignore
+   public void ignoreNumbersGreaterThan1000() throws Exception {
+	   	assertEquals(stringCalculator.add("10,10,1001"),20);
+	   }
 }
