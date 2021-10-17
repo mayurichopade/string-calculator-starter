@@ -29,4 +29,8 @@ class StringCalculatorShould {
    public void twoNumbersNewLineDelimitedReturnSum()throws Exception {
 	   	assertEquals(stringCalculator.add("1\n2"),3);
 	   }
+   // test for multiple delimiter in three number
+   public void threeNumbersDelimitedBothWayReturnSum() throws Exception{
+	   	assertEquals(stringCalculator.add("1,2,3"),6);
+	   }
 }
