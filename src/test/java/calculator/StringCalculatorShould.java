@@ -1,20 +1,22 @@
 package calculator;
+import static org.testng.Assert.assertEquals;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
+@Test
 class StringCalculatorShould {
+	
+	private StringCalculator stringCalculator;
+	
+	@BeforeTest
+	public void init() {
+		stringCalculator = new StringCalculator();
+	}
 
-    @Test
-    void empty_string_should_return_0() {
-        StringCalculator stringCalculator = new StringCalculator();
-        assertEquals(0, stringCalculator.add(""));
+   //test-for empty string
+   public void empty_string_should_return_0() throws Exception {
+        assertEquals(stringCalculator.add(""),0);   
     }
 
-    @Test
-    void string_with_single_number_should_return_number_as_int() {
-        StringCalculator stringCalculator = new StringCalculator();
-        assertEquals(1, stringCalculator.add("1"));
-    }
+  
 }
