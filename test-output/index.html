@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Mayuri Chopade\AppData\Local\Temp\testng-eclipse--290804257\testng-customsuite.xml</span>
+                    <span>C:\Users\Mayuri Chopade\AppData\Local\Temp\testng-eclipse-1082596599\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,6 +110,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="calculator.StringCalculatorShould" class="method navigator-link" hash-for-method="multipleDelimiterReturnSum">multipleDelimiterReturnSum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="calculator.StringCalculatorShould" class="method navigator-link" hash-for-method="negativeInputReturnsException">negativeInputReturnsException</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -166,6 +171,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="negativeInputReturnsException">
+                  </a> <!-- negativeInputReturnsException -->
+                  <span class="method-name">negativeInputReturnsException</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="string_with_single_number_should_return_number_as_int">
                   </a> <!-- string_with_single_number_should_return_number_as_int -->
                   <span class="method-name">string_with_single_number_should_return_number_as_int</span>
@@ -197,7 +209,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mayuri Chopade\AppData\Local\Temp\testng-eclipse--290804257\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Mayuri Chopade\AppData\Local\Temp\testng-eclipse-1082596599\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -246,7 +258,7 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'empty_string_should_return_0')
 data.setCell(0, 2, 'calculator.StringCalculatorShould')
@@ -256,26 +268,30 @@ data.setCell(1, 1, 'twoNumbersNewLineDelimitedReturnSum')
 data.setCell(1, 2, 'calculator.StringCalculatorShould')
 data.setCell(1, 3, 3);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'twoNumbersCommaDelimitedReturnSum')
+data.setCell(2, 1, 'threeNumbersDelimitedBothWayReturnSum')
 data.setCell(2, 2, 'calculator.StringCalculatorShould')
 data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'multipleDelimiterReturnSum')
+data.setCell(3, 1, 'string_with_single_number_should_return_number_as_int')
 data.setCell(3, 2, 'calculator.StringCalculatorShould')
-data.setCell(3, 3, 2);
+data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'threeNumbersDelimitedBothWayReturnSum')
+data.setCell(4, 1, 'multipleDelimiterReturnSum')
 data.setCell(4, 2, 'calculator.StringCalculatorShould')
-data.setCell(4, 3, 2);
+data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'string_with_single_number_should_return_number_as_int')
+data.setCell(5, 1, 'twoNumbersCommaDelimitedReturnSum')
 data.setCell(5, 2, 'calculator.StringCalculatorShould')
 data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'negativeInputReturnsException')
+data.setCell(6, 2, 'calculator.StringCalculatorShould')
+data.setCell(6, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 ms</span>
+              <span class="suite-total-time">Total running time: 20 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -308,27 +324,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">empty_string_should_return_0</span>
-                <span class="method-start">53 ms</span>
+                <span class="method-start">36 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">multipleDelimiterReturnSum</span>
-                <span class="method-start">68 ms</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeInputReturnsException</span>
+                <span class="method-start">55 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">string_with_single_number_should_return_number_as_int</span>
-                <span class="method-start">71 ms</span>
+                <span class="method-start">59 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">threeNumbersDelimitedBothWayReturnSum</span>
-                <span class="method-start">73 ms</span>
+                <span class="method-start">62 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">twoNumbersCommaDelimitedReturnSum</span>
-                <span class="method-start">79 ms</span>
+                <span class="method-start">68 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">twoNumbersNewLineDelimitedReturnSum</span>
-                <span class="method-start">88 ms</span>
+                <span class="method-start">72 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
