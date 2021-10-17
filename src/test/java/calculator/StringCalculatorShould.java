@@ -33,4 +33,9 @@ class StringCalculatorShould {
    public void threeNumbersDelimitedBothWayReturnSum() throws Exception{
 	   	assertEquals(stringCalculator.add("1,2,3"),6);
 	   }
+   // test for multiple delimiter
+   public void multipleDelimiterReturnSum() throws Exception {
+	   	assertEquals(stringCalculator.add("1;2"),3);
+	   }
+	   
 }
